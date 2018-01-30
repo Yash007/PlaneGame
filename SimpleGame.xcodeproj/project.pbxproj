@@ -15,6 +15,13 @@
 		41059F00201FEC06004DFE4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41059EFE201FEC06004DFE4E /* Main.storyboard */; };
 		41059F02201FEC06004DFE4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41059F01201FEC06004DFE4E /* Assets.xcassets */; };
 		41059F05201FEC06004DFE4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41059F03201FEC06004DFE4E /* LaunchScreen.storyboard */; };
+		41059F0F201FED32004DFE4E /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41059F0C201FED32004DFE4E /* thunder.mp3 */; };
+		41059F10201FED32004DFE4E /* engine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41059F0D201FED32004DFE4E /* engine.mp3 */; };
+		41059F11201FED32004DFE4E /* yay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 41059F0E201FED32004DFE4E /* yay.mp3 */; };
+		41059F13201FED9F004DFE4E /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41059F12201FED79004DFE4E /* Dock51.ttf */; };
+		41059F1B2020053A004DFE4E /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41059F1A2020053A004DFE4E /* GameObject.swift */; };
+		41059F1D20200905004DFE4E /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41059F1C20200905004DFE4E /* GameProtocol.swift */; };
+		41059F1F2020098F004DFE4E /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41059F1E2020098F004DFE4E /* Plane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		41059F01201FEC06004DFE4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41059F04201FEC06004DFE4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41059F06201FEC06004DFE4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41059F0C201FED32004DFE4E /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = thunder.mp3; path = ../../../../Downloads/Assets/audio/thunder.mp3; sourceTree = "<group>"; };
+		41059F0D201FED32004DFE4E /* engine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = engine.mp3; path = ../../../../Downloads/Assets/audio/engine.mp3; sourceTree = "<group>"; };
+		41059F0E201FED32004DFE4E /* yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yay.mp3; path = ../../../../Downloads/Assets/audio/yay.mp3; sourceTree = "<group>"; };
+		41059F12201FED79004DFE4E /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dock51.ttf; path = ../../../../Downloads/Assets/fonts/Dock51.ttf; sourceTree = "<group>"; };
+		41059F1A2020053A004DFE4E /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		41059F1C20200905004DFE4E /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		41059F1E2020098F004DFE4E /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +74,40 @@
 		41059EF3201FEC06004DFE4E /* SimpleGame */ = {
 			isa = PBXGroup;
 			children = (
-				41059EF4201FEC06004DFE4E /* AppDelegate.swift */,
-				41059EF6201FEC06004DFE4E /* GameScene.sks */,
-				41059EF8201FEC06004DFE4E /* Actions.sks */,
-				41059EFA201FEC06004DFE4E /* GameScene.swift */,
+				41059F19202004EE004DFE4E /* Objects */,
+				41059F16201FF8C1004DFE4E /* Scenes */,
+				41059F12201FED79004DFE4E /* Dock51.ttf */,
 				41059EFC201FEC06004DFE4E /* GameViewController.swift */,
+				41059F0D201FED32004DFE4E /* engine.mp3 */,
+				41059F0C201FED32004DFE4E /* thunder.mp3 */,
+				41059F0E201FED32004DFE4E /* yay.mp3 */,
+				41059EF4201FEC06004DFE4E /* AppDelegate.swift */,
+				41059EF8201FEC06004DFE4E /* Actions.sks */,
 				41059EFE201FEC06004DFE4E /* Main.storyboard */,
 				41059F01201FEC06004DFE4E /* Assets.xcassets */,
 				41059F03201FEC06004DFE4E /* LaunchScreen.storyboard */,
 				41059F06201FEC06004DFE4E /* Info.plist */,
 			);
 			path = SimpleGame;
+			sourceTree = "<group>";
+		};
+		41059F16201FF8C1004DFE4E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				41059EF6201FEC06004DFE4E /* GameScene.sks */,
+				41059EFA201FEC06004DFE4E /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		41059F19202004EE004DFE4E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				41059F1A2020053A004DFE4E /* GameObject.swift */,
+				41059F1C20200905004DFE4E /* GameProtocol.swift */,
+				41059F1E2020098F004DFE4E /* Plane.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,11 +169,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41059F11201FED32004DFE4E /* yay.mp3 in Resources */,
 				41059F00201FEC06004DFE4E /* Main.storyboard in Resources */,
 				41059EF7201FEC06004DFE4E /* GameScene.sks in Resources */,
+				41059F13201FED9F004DFE4E /* Dock51.ttf in Resources */,
+				41059F10201FED32004DFE4E /* engine.mp3 in Resources */,
 				41059F02201FEC06004DFE4E /* Assets.xcassets in Resources */,
 				41059F05201FEC06004DFE4E /* LaunchScreen.storyboard in Resources */,
 				41059EF9201FEC06004DFE4E /* Actions.sks in Resources */,
+				41059F0F201FED32004DFE4E /* thunder.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41059F1B2020053A004DFE4E /* GameObject.swift in Sources */,
+				41059F1D20200905004DFE4E /* GameProtocol.swift in Sources */,
 				41059EFB201FEC06004DFE4E /* GameScene.swift in Sources */,
 				41059EFD201FEC06004DFE4E /* GameViewController.swift in Sources */,
+				41059F1F2020098F004DFE4E /* Plane.swift in Sources */,
 				41059EF5201FEC06004DFE4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
