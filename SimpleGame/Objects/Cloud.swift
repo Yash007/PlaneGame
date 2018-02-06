@@ -20,11 +20,20 @@ class Cloud: GameObject {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    
     override func Start() {
+        
         self.setScale(0.6)
+        
+        self.width = (texture?.size().width)! * self.scale!
+        self.height = (texture?.size().height)! * self.scale!
+        
+        self.halfWidth = self.width! * 0.5
+        self.halfHeight = self.height! * 0.5
         self.zPosition = 3
         self.Reset()
-        self.dy = 5.0
+        self.dy = 7.0
     }
     
     override func Reset()    {

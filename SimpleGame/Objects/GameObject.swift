@@ -34,6 +34,7 @@ class GameObject: SKSpriteNode, GameProtocol {
         let color = UIColor.clear
         super.init(texture: texture, color: color, size: texture.size())
         self.scale = initialScale
+        self.setScale(scale!)
         self.width = texture.size().width * self.scale!
         self.height = texture.size().height * self.scale!
         
