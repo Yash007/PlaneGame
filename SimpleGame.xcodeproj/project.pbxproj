@@ -23,6 +23,8 @@
 		41059F1D20200905004DFE4E /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41059F1C20200905004DFE4E /* GameProtocol.swift */; };
 		41059F1F2020098F004DFE4E /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41059F1E2020098F004DFE4E /* Plane.swift */; };
 		41059F212020130A004DFE4E /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41059F202020130A004DFE4E /* Ocean.swift */; };
+		41F2216220292FE400ED75F3 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F2216120292FE400ED75F3 /* Island.swift */; };
+		41F221642029411D00ED75F3 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F221632029411D00ED75F3 /* Cloud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		41059F1C20200905004DFE4E /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		41059F1E2020098F004DFE4E /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		41059F202020130A004DFE4E /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		41F2216120292FE400ED75F3 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		41F221632029411D00ED75F3 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				41059F1C20200905004DFE4E /* GameProtocol.swift */,
 				41059F1E2020098F004DFE4E /* Plane.swift */,
 				41059F202020130A004DFE4E /* Ocean.swift */,
+				41F2216120292FE400ED75F3 /* Island.swift */,
+				41F221632029411D00ED75F3 /* Cloud.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -192,7 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				41059F212020130A004DFE4E /* Ocean.swift in Sources */,
+				41F221642029411D00ED75F3 /* Cloud.swift in Sources */,
 				41059F1B2020053A004DFE4E /* GameObject.swift in Sources */,
+				41F2216220292FE400ED75F3 /* Island.swift in Sources */,
 				41059F1D20200905004DFE4E /* GameProtocol.swift in Sources */,
 				41059EFB201FEC06004DFE4E /* GameScene.swift in Sources */,
 				41059EFD201FEC06004DFE4E /* GameViewController.swift in Sources */,

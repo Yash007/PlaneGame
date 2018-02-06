@@ -23,6 +23,9 @@ class GameObject: SKSpriteNode, GameProtocol {
     var halfWidth: CGFloat?
     var halfHeight: CGFloat?
     
+    var randomSource: GKARC4RandomSource?
+    var randomDist: GKRandomDistribution?
+    
     //Constructors
     
     init(imageString: String, initialScale: CGFloat)    {
@@ -38,6 +41,8 @@ class GameObject: SKSpriteNode, GameProtocol {
         self.halfHeight = self.height! * 0.5
         self.isColliding = false
         self.name = imageString
+        
+        randomSource = GKARC4RandomSource()
     }
     
     required init?(coder aDecoder: NSCoder) {

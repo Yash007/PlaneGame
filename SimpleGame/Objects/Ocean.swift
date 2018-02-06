@@ -15,6 +15,7 @@ class Ocean: GameObject {
     }
     
     override func Start() {
+        self.zPosition = 0
         self.anchorPoint = CGPoint.zero
         self.dy = 5.0
     }
